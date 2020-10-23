@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginInfo.PantallaRegistro"
+    android:background="#1a1b1a">
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_nombreusu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@color/login_form_details"
+
+
+        android:hint="Nombre de Usuario"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@color/login_form_details"
+
+
+        android:hint="Ingrese su Email"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_nombreusu"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@color/login_form_details"
+
+
+        android:hint="Ingrese su Contraseña"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_pass2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@color/login_form_details"
+
+
+        android:hint="Confirme su Contraseña"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_pass"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+
+
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Registrarse"
+        android:background="@drawable/btn_login"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@id/edit_pass2"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right"
+
+        app:layout_constraintStart_toStartOf="@id/guideline_left" />
+
+
+
+    <Button
+        android:id="@+id/btn_loginBack"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="0dp"
+        android:text="Ya tenes una cuenta? Inicia secion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/footer_line"
+        android:textColor="@color/login_form_details"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_transparente"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+    <View
+        android:id="@+id/footer_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="50dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+</androidx.constraintlayout.widget.ConstraintLayout>

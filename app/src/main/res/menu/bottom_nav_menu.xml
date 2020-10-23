@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pantalla2"
+        android:title="Buscar"
+        android:icon="@drawable/ic_add_location_24px" />
+    <item
+        android:id="@+id/pantalla1"
+        android:title="Home"
+        android:icon="@drawable/ic_home_24px" />
+    <item
+        android:id="@+id/pantalla3"
+        android:title="Perfil"
+        android:icon="@drawable/ic_person_24px" />
+
+</menu>

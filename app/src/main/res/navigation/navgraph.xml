@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/pantalla1">
+
+    <fragment
+        android:id="@+id/pantalla1"
+        android:name="com.example.tp5.Pantalla1"
+        android:label="fragment_pantalla1"
+        tools:layout="@layout/fragment_pantalla1" >
+        <action
+            android:id="@+id/action_pantalla1_to_pantalla2"
+            app:destination="@id/pantalla2" />
+        <action
+            android:id="@+id/action_pantalla1_to_pantalla3"
+            app:destination="@id/pantalla3" />
+        <action
+            android:id="@+id/action_pantalla1_to_pantalla4"
+            app:destination="@id/pantalla4" />
+        <action
+            android:id="@+id/action_pantalla1_to_crearPartido"
+            app:destination="@id/crearPartido" />
+        <action
+            android:id="@+id/action_pantalla1_to_crearJugadorDispo"
+            app:destination="@id/crearJugadorDispo" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla2"
+        android:name="com.example.tp5.Pantalla2"
+        android:label="fragment_pantalla2"
+        tools:layout="@layout/fragment_pantalla2" >
+        <action
+            android:id="@+id/action_pantalla2_to_pantalla4"
+            app:destination="@id/pantalla4" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla3"
+        android:name="com.example.tp5.Pantalla3"
+        android:label="fragment_pantalla3"
+        tools:layout="@layout/fragment_pantalla3" >
+        <action
+            android:id="@+id/action_pantalla3_to_pantalla1"
+            app:destination="@id/pantalla1" />
+        <action
+            android:id="@+id/action_pantalla3_to_itemFragmentPartido"
+            app:destination="@id/itemFragmentPartido" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantalla4"
+        android:name="com.example.tp5.Pantalla4"
+        android:label="fragment_pantalla4"
+        tools:layout="@layout/fragment_pantalla4" >
+        <action
+            android:id="@+id/action_pantalla4_to_pantalla1"
+            app:destination="@id/pantalla1" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearPartido"
+        android:name="com.example.tp5.CrearPartido"
+        android:label="fragment_crear_partido"
+        tools:layout="@layout/fragment_crear_partido" />
+    <fragment
+        android:id="@+id/itemFragmentPartido"
+        android:name="com.example.tp5.ItemFragmentPartido"
+        android:label="fragment_item_partido"
+        tools:layout="@layout/fragment_item_partido" >
+        <argument
+            android:name="horario"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearJugadorDispo"
+        android:name="com.example.tp5.CrearJugadorDispo"
+        android:label="fragment_crear_jugador_dispo"
+        tools:layout="@layout/fragment_crear_jugador_dispo" />
+</navigation>

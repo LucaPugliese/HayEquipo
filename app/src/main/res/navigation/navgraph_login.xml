@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_login"
+    app:startDestination="@id/pantallaLogin">
+
+    <fragment
+        android:id="@+id/pantallaLogin"
+        android:name="com.example.tp5.LoginInfo.PantallaLogin"
+        android:label="fragment_pantalla_login"
+        tools:layout="@layout/fragment_pantalla_login" >
+        <action
+            android:id="@+id/action_pantallaLogin_to_pantallaRegistro"
+            app:destination="@id/pantallaRegistro" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaRegistro"
+        android:name="com.example.tp5.LoginInfo.PantallaRegistro"
+        android:label="fragment_pantalla_registro"
+        tools:layout="@layout/fragment_pantalla_registro" >
+        <action
+            android:id="@+id/action_pantallaRegistro_to_pantallaLogin"
+            app:destination="@id/pantallaLogin" />
+    </fragment>
+</navigation>

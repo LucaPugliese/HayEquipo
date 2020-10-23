@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "24267234993",
+    "firebase_url": "https://futberapp-2020.firebaseio.com",
+    "project_id": "futberapp-2020",
+    "storage_bucket": "futberapp-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24267234993:android:e958a9497f50fc81a58c90",
+        "android_client_info": {
+          "package_name": "com.example.tp5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24267234993-ej9qcqccl0lf53r5q4o478568dvv45m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0brZjPGChFmEVjowwGO3yYsFbquv4Buw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24267234993-ej9qcqccl0lf53r5q4o478568dvv45m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
